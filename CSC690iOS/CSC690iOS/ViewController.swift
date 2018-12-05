@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  CSC690iOS
+//  Vital Fluid
 //
 //  Created by Tejasvi Belsare on 12/4/18.
 //  Copyright © 2018 Tejasvi Belsare. All rights reserved.

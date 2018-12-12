@@ -41,10 +41,13 @@ class InfoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // Do any additional setup after loading the view, typically from a nib.
         
         infoTableView.isHidden = true
+        infoTableView.backgroundView = UIImageView(image: UIImage(named: "blood3.png"))
+    
+        infoTableView.backgroundColor = UIColor.clear
         
-        names = ["Download Form","Benefits of blood donation","Tips before donating blood","Tips after donating blood","Food Habits","Eligibility for donating blood","What happens with your blood"]
+        names = ["Download Form","Benefits of blood donation","Tips for blood donation","Food Habits","Eligibility for donating blood","What happens with your blood"]
         
-        identities = ["A","B","C","D","E","F","G"]
+        identities = ["A","B","C","E","F","G"]
 
     }
     
@@ -55,6 +58,8 @@ class InfoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+//        tableView.tableFooterView = UIView(frame: CGRect.zero)
         return names.count
     }
     
@@ -76,6 +81,19 @@ class InfoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.navigationController?.pushViewController(viewCntrl!, animated: true)
         
 
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 103.0
+    }
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        tableView.tableFooterView = UIView(frame: CGRect.zero)   /// to hide the extra cells down
+//    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.clear
+        cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
     }
 
 }

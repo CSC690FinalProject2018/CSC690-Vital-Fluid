@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		820F410921B9A2AB00B6E61E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820F410721B9A2AB00B6E61E /* Main.storyboard */; };
+		8251775E21BF7D1C00EF3F3A /* BenefitsOfBloodDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251775D21BF7D1C00EF3F3A /* BenefitsOfBloodDonationViewController.swift */; };
+		82B2D52621C081A300F3BD10 /* TipsForBloodDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B2D52521C081A300F3BD10 /* TipsForBloodDonationViewController.swift */; };
 		82D4F28521B794DE00C16D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4F28421B794DE00C16D25 /* AppDelegate.swift */; };
 		82D4F28721B794DE00C16D25 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4F28621B794DE00C16D25 /* InfoViewController.swift */; };
 		82D4F28C21B794DF00C16D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D4F28B21B794DF00C16D25 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		820F410821B9A2AB00B6E61E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8251775D21BF7D1C00EF3F3A /* BenefitsOfBloodDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsOfBloodDonationViewController.swift; sourceTree = "<group>"; };
+		82B2D52521C081A300F3BD10 /* TipsForBloodDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsForBloodDonationViewController.swift; sourceTree = "<group>"; };
 		82D4F28121B794DE00C16D25 /* CSC690iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSC690iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D4F28421B794DE00C16D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82D4F28621B794DE00C16D25 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				82D4F28421B794DE00C16D25 /* AppDelegate.swift */,
 				82D4F28621B794DE00C16D25 /* InfoViewController.swift */,
 				820F410721B9A2AB00B6E61E /* Main.storyboard */,
+				82B2D52521C081A300F3BD10 /* TipsForBloodDonationViewController.swift */,
+				8251775D21BF7D1C00EF3F3A /* BenefitsOfBloodDonationViewController.swift */,
 				82D4F28B21B794DF00C16D25 /* Assets.xcassets */,
 				82D4F28D21B794DF00C16D25 /* LaunchScreen.storyboard */,
 				82D4F29021B794DF00C16D25 /* Info.plist */,
@@ -197,6 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8251775E21BF7D1C00EF3F3A /* BenefitsOfBloodDonationViewController.swift in Sources */,
+				82B2D52621C081A300F3BD10 /* TipsForBloodDonationViewController.swift in Sources */,
 				82D4F28721B794DE00C16D25 /* InfoViewController.swift in Sources */,
 				82D4F28521B794DE00C16D25 /* AppDelegate.swift in Sources */,
 			);

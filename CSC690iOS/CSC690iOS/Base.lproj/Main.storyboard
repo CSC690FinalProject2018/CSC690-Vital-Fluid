@@ -285,25 +285,35 @@
             </objects>
             <point key="canvasLocation" x="-825" y="-464"/>
         </scene>
-        <!--View Controller-->
+        <!--Download Form View Controller-->
         <scene sceneID="4wt-Jm-Heh">
             <objects>
-                <viewController storyboardIdentifier="A" id="6sz-M2-Gqw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="A" id="6sz-M2-Gqw" customClass="DownloadFormViewController" customModule="CSC690iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7gh-bz-HUK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zde-8Q-uLt">
-                                <rect key="frame" x="62" y="323" width="206" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dB-WN-AI1">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r9o-il-fIV" firstAttribute="bottom" secondItem="6dB-WN-AI1" secondAttribute="bottom" id="P3W-Xz-eZ2"/>
+                            <constraint firstItem="6dB-WN-AI1" firstAttribute="leading" secondItem="r9o-il-fIV" secondAttribute="leading" id="PuA-r3-gna"/>
+                            <constraint firstItem="6dB-WN-AI1" firstAttribute="top" secondItem="r9o-il-fIV" secondAttribute="top" id="S7I-f7-PHJ"/>
+                            <constraint firstItem="r9o-il-fIV" firstAttribute="trailing" secondItem="6dB-WN-AI1" secondAttribute="trailing" id="pwl-o5-RmO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="r9o-il-fIV"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="6dB-WN-AI1" id="fLH-JC-0cM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RE0-86-XBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

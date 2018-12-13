@@ -66,7 +66,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d51002dfcefe1310e7da7f6b07914db2" translatesAutoresizingMaskIntoConstraints="NO" id="i25-h8-cAN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i25-h8-cAN">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v6Z-b2-ZXq">
@@ -107,9 +107,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="imageView" destination="i25-h8-cAN" id="Sfd-3f-R4p"/>
                         <outlet property="infoNavigationBarButton" destination="Zxj-YW-men" id="6ZZ-uO-LcJ"/>
                         <outlet property="infoTableView" destination="v6Z-b2-ZXq" id="lNK-dq-r0E"/>
-                        <outletCollection property="infoViewImages" destination="i25-h8-cAN" collectionClass="NSMutableArray" id="cXg-n9-YcV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRc-7v-wfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -445,7 +445,6 @@
     <resources>
         <image name="about" width="30" height="30"/>
         <image name="calendar" width="30" height="30"/>
-        <image name="d51002dfcefe1310e7da7f6b07914db2" width="407" height="600"/>
         <image name="map_marker" width="30" height="30"/>
         <image name="сontacts" width="30" height="30"/>
     </resources>

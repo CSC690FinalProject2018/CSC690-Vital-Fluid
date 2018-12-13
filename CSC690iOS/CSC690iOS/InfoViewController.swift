@@ -15,10 +15,15 @@ class InfoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var identities = [String]()
 
-    @IBOutlet weak var infoViewImages: UIImageView!
+//    @IBOutlet weak var infoViewImages: UIImageView!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    var imageArray = [UIImage]()
+//    let imageView = UIImageView()
     
     @IBOutlet weak var infoTableView: UITableView!
     
+    let number = Int.random(in: 0 ..< 15)
     
 //    @IBOutlet var infoViewImages: [UIImageView]!
 //    @IBOutlet weak var infoTableView: UITableView!
@@ -36,6 +41,16 @@ class InfoViewController: UIViewController, UITableViewDataSource, UITableViewDe
             infoNavigationBarButton.isEnabled = false
 //        }
     }
+    
+//        let scrollView: UIScrollView = {
+//        let scroll = UIScrollView()
+//        scroll.isPagingEnabled = true
+//        scroll.showsVerticalScrollIndicator = false
+//        scroll.showsHorizontalScrollIndicator = false
+//        scroll.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+//        return scroll
+//        }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -48,6 +63,35 @@ class InfoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         names = ["Blood donation form","Benefits of blood donation","Tips for blood donation","Eligibility for donating blood", "How your body replaces blood?","What happens to donated blood?"]
         
         identities = ["A","B","C","E","F","G"]
+        
+//        imageArray = [UIImage(named:"motivate1.jpeg")!,UIImage(named:"motivate2.jpeg")!,UIImage(named:"motivate3.jpg")!,UIImage(named:"motivate4.jpg")!,UIImage(named:"motivate5.jpg")!,UIImage(named:"motivate6.jpg")!, UIImage(named: "motivate7.jpg")!]
+        
+//        imageArray = [#imageLiteral(resourceName: "motivate1"), #imageLiteral(resourceName: "motivate3"), #imageLiteral(resourceName: "motivate2"), #imageLiteral(resourceName: "d51002dfcefe1310e7da7f6b07914db2"), #imageLiteral(resourceName: "motivate5"), #imageLiteral(resourceName: "motivate7"), #imageLiteral(resourceName: "motivate6"), #imageLiteral(resourceName: "motivate4"),#imageLiteral(resourceName: "motivate2"), #imageLiteral(resourceName: "motivate9.jpeg"), #imageLiteral(resourceName: "motivate10.jpeg"), #imageLiteral(resourceName: "motivate11.jpeg"), #imageLiteral(resourceName: "motivate12.jpeg"), #imageLiteral(resourceName: "motivate13.jpg"), #imageLiteral(resourceName: "motivate14.jpg"), #imageLiteral(resourceName: "motivate15.jpeg"), #imageLiteral(resourceName: "motivate16.jpg")]
+        
+        imageArray = [#imageLiteral(resourceName: "motivate6"), #imageLiteral(resourceName: "motivate11"), #imageLiteral(resourceName: "motivate14"), #imageLiteral(resourceName: "motivate2"), #imageLiteral(resourceName: "motivate15"), #imageLiteral(resourceName: "motivate3"), #imageLiteral(resourceName: "motivate8"), #imageLiteral(resourceName: "motivate7"), #imageLiteral(resourceName: "d51002dfcefe1310e7da7f6b07914db2"), #imageLiteral(resourceName: "motivate13"), #imageLiteral(resourceName: "motivate5"), #imageLiteral(resourceName: "motivate1"), #imageLiteral(resourceName: "motivate10"), #imageLiteral(resourceName: "motivate12"), #imageLiteral(resourceName: "motivate9"), #imageLiteral(resourceName: "motivate4")]
+        imageView.contentMode = .scaleAspectFit
+            
+        imageView.image = imageArray[15]
+        
+        
+  
+        
+        
+        
+//        for i in 0..<imageArray.count {
+//
+////            let imageView = UIImageView()
+//            if infoViewImages.image = imageArray[i] {
+//
+//                let xPosition = UIScreen.main.bounds.width * CGFloat(i)
+//                infoViewImages.frame = CGRect(x: xPosition, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
+//                infoViewImages.contentMode = .scaleAspectFit
+//
+//                scrollView.contentSize.width = scrollView.frame.width * CGFloat(i + 1)
+//                scrollView.addSubview(infoViewImages)
+//                scrollView.delegate = self
+        
+//    }
 
     }
     

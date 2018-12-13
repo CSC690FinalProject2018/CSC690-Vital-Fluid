@@ -67,6 +67,8 @@ class InfoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
         cell?.textLabel?.text = names[indexPath.row]
+//        cell?.textLabel?.numberOfLines = 0
+        
 //        cell?.textLabel?.text = String(indexPath.row)
         print (names[indexPath.row])
         return cell!

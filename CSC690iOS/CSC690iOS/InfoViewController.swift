@@ -45,7 +45,7 @@ class InfoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
         infoTableView.backgroundColor = UIColor.clear
         
-        names = ["Download Form","Benefits of blood donation","Tips for blood donation","Food Habits","Eligibility for donating blood","What happens with your blood"]
+        names = ["Blood donation form","Benefits of blood donation","Tips for blood donation","Eligibility for donating blood", "How your body replaces blood?","What happens to donated blood?"]
         
         identities = ["A","B","C","E","F","G"]
 

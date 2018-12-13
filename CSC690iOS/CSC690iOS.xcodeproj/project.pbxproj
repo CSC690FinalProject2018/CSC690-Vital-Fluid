@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		82014BBF21C254F20074350B /* blood_donation_form.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 82014BBE21C254F10074350B /* blood_donation_form.pdf */; };
+		820DCE0821C26E85008AD34E /* WhatHappensToDonatedBloodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820DCE0721C26E85008AD34E /* WhatHappensToDonatedBloodViewController.swift */; };
 		820EA83021C24BA00064BE9B /* DownloadFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820EA82F21C24BA00064BE9B /* DownloadFormViewController.swift */; };
 		820F410921B9A2AB00B6E61E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820F410721B9A2AB00B6E61E /* Main.storyboard */; };
 		8251775E21BF7D1C00EF3F3A /* BenefitsOfBloodDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251775D21BF7D1C00EF3F3A /* BenefitsOfBloodDonationViewController.swift */; };
+		825993FC21C2761E00CB71E9 /* HowYourBodyReplacesBloodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825993FB21C2761E00CB71E9 /* HowYourBodyReplacesBloodViewController.swift */; };
 		82B2D52621C081A300F3BD10 /* TipsForBloodDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B2D52521C081A300F3BD10 /* TipsForBloodDonationViewController.swift */; };
 		82D4F28521B794DE00C16D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4F28421B794DE00C16D25 /* AppDelegate.swift */; };
 		82D4F28721B794DE00C16D25 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4F28621B794DE00C16D25 /* InfoViewController.swift */; };
@@ -31,9 +33,11 @@
 
 /* Begin PBXFileReference section */
 		82014BBE21C254F10074350B /* blood_donation_form.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = blood_donation_form.pdf; sourceTree = "<group>"; };
+		820DCE0721C26E85008AD34E /* WhatHappensToDonatedBloodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatHappensToDonatedBloodViewController.swift; sourceTree = "<group>"; };
 		820EA82F21C24BA00064BE9B /* DownloadFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadFormViewController.swift; sourceTree = "<group>"; };
 		820F410821B9A2AB00B6E61E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8251775D21BF7D1C00EF3F3A /* BenefitsOfBloodDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsOfBloodDonationViewController.swift; sourceTree = "<group>"; };
+		825993FB21C2761E00CB71E9 /* HowYourBodyReplacesBloodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowYourBodyReplacesBloodViewController.swift; sourceTree = "<group>"; };
 		82B2D52521C081A300F3BD10 /* TipsForBloodDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsForBloodDonationViewController.swift; sourceTree = "<group>"; };
 		82D4F28121B794DE00C16D25 /* CSC690iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSC690iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D4F28421B794DE00C16D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +91,9 @@
 			children = (
 				82014BBE21C254F10074350B /* blood_donation_form.pdf */,
 				82D4F28421B794DE00C16D25 /* AppDelegate.swift */,
+				820DCE0721C26E85008AD34E /* WhatHappensToDonatedBloodViewController.swift */,
 				82D4F28621B794DE00C16D25 /* InfoViewController.swift */,
+				825993FB21C2761E00CB71E9 /* HowYourBodyReplacesBloodViewController.swift */,
 				820F410721B9A2AB00B6E61E /* Main.storyboard */,
 				820EA82F21C24BA00064BE9B /* DownloadFormViewController.swift */,
 				82B2D52521C081A300F3BD10 /* TipsForBloodDonationViewController.swift */,
@@ -210,7 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				820DCE0821C26E85008AD34E /* WhatHappensToDonatedBloodViewController.swift in Sources */,
 				8251775E21BF7D1C00EF3F3A /* BenefitsOfBloodDonationViewController.swift in Sources */,
+				825993FC21C2761E00CB71E9 /* HowYourBodyReplacesBloodViewController.swift in Sources */,
 				82B2D52621C081A300F3BD10 /* TipsForBloodDonationViewController.swift in Sources */,
 				82D4F28721B794DE00C16D25 /* InfoViewController.swift in Sources */,
 				82D4F28521B794DE00C16D25 /* AppDelegate.swift in Sources */,

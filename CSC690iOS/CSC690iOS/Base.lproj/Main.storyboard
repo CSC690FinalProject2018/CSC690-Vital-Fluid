@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="2802.4000000000001" y="-269.41529235382313"/>
         </scene>
-        <!--Info View Controller-->
+        <!--Vital Fluid-->
         <scene sceneID="MQN-8W-LGh">
             <objects>
-                <viewController id="hv6-pe-daC" customClass="InfoViewController" customModule="CSC690iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Vital Fluid" id="hv6-pe-daC" customClass="InfoViewController" customModule="CSC690iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FMM-Np-lBW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,7 +100,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="SqS-DE-7Ty">
                         <barButtonItem key="rightBarButtonItem" title="Click here" id="Zxj-YW-men">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.89958912130000002" green="0.81833580439999998" blue="0.59830550670000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="infoNavigationBarButtonPressed:" destination="hv6-pe-daC" id="1Dg-7s-esp"/>
                             </connections>
@@ -370,7 +370,15 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CLC-QS-L77">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.89958912130000002" green="0.81833580439999998" blue="0.59830550670000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" red="0.85221684644670048" green="0.026213345075665456" blue="0.078610788492730552" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

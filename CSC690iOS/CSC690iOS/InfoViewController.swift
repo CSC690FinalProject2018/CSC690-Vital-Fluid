@@ -55,6 +55,17 @@ class InfoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
+        
+        let attrs = [
+            NSAttributedString.Key.foregroundColor: UIColor.red,
+            NSAttributedString.Key.font: UIFont(name: "Georgia-Bold", size: 30)!
+        ]
+        
+        UINavigationBar.appearance().titleTextAttributes = attrs
+        self.title = "Vital Fluid"
+        
+        
         infoTableView.isHidden = true
         infoTableView.backgroundView = UIImageView(image: UIImage(named: "blood3.png"))
     
@@ -65,16 +76,12 @@ class InfoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         identities = ["A","B","C","E","F","G"]
         
 //        imageArray = [UIImage(named:"motivate1.jpeg")!,UIImage(named:"motivate2.jpeg")!,UIImage(named:"motivate3.jpg")!,UIImage(named:"motivate4.jpg")!,UIImage(named:"motivate5.jpg")!,UIImage(named:"motivate6.jpg")!, UIImage(named: "motivate7.jpg")!]
-        
-//        imageArray = [#imageLiteral(resourceName: "motivate1"), #imageLiteral(resourceName: "motivate3"), #imageLiteral(resourceName: "motivate2"), #imageLiteral(resourceName: "d51002dfcefe1310e7da7f6b07914db2"), #imageLiteral(resourceName: "motivate5"), #imageLiteral(resourceName: "motivate7"), #imageLiteral(resourceName: "motivate6"), #imageLiteral(resourceName: "motivate4"),#imageLiteral(resourceName: "motivate2"), #imageLiteral(resourceName: "motivate9.jpeg"), #imageLiteral(resourceName: "motivate10.jpeg"), #imageLiteral(resourceName: "motivate11.jpeg"), #imageLiteral(resourceName: "motivate12.jpeg"), #imageLiteral(resourceName: "motivate13.jpg"), #imageLiteral(resourceName: "motivate14.jpg"), #imageLiteral(resourceName: "motivate15.jpeg"), #imageLiteral(resourceName: "motivate16.jpg")]
+
         
         imageArray = [#imageLiteral(resourceName: "motivate6"), #imageLiteral(resourceName: "motivate11"), #imageLiteral(resourceName: "motivate14"), #imageLiteral(resourceName: "motivate2"), #imageLiteral(resourceName: "motivate15"), #imageLiteral(resourceName: "motivate3"), #imageLiteral(resourceName: "motivate8"), #imageLiteral(resourceName: "motivate7"), #imageLiteral(resourceName: "d51002dfcefe1310e7da7f6b07914db2"), #imageLiteral(resourceName: "motivate13"), #imageLiteral(resourceName: "motivate5"), #imageLiteral(resourceName: "motivate1"), #imageLiteral(resourceName: "motivate10"), #imageLiteral(resourceName: "motivate12"), #imageLiteral(resourceName: "motivate9"), #imageLiteral(resourceName: "motivate4")]
         imageView.contentMode = .scaleAspectFit
             
-        imageView.image = imageArray[15]
-        
-        
-  
+        imageView.image = imageArray[number]
         
         
         

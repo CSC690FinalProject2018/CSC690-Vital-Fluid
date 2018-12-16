@@ -20,6 +20,10 @@
 		82D4F28C21B794DF00C16D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D4F28B21B794DF00C16D25 /* Assets.xcassets */; };
 		82D4F28F21B794DF00C16D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D4F28D21B794DF00C16D25 /* LaunchScreen.storyboard */; };
 		82D4F29A21B794DF00C16D25 /* CSC690iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D4F29921B794DF00C16D25 /* CSC690iOSTests.swift */; };
+		C087F4BE21C5E4CD00B0F46E /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087F4BD21C5E4CD00B0F46E /* profileViewController.swift */; };
+		C087F4C221C5E52900B0F46E /* calendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087F4C121C5E52900B0F46E /* calendarViewController.swift */; };
+		C087F4C421C5E5AC00B0F46E /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087F4C321C5E5AC00B0F46E /* CalendarVars.swift */; };
+		C087F4C621C5E5CD00B0F46E /* DateCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087F4C521C5E5CD00B0F46E /* DateCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		82D4F29521B794DF00C16D25 /* CSC690iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSC690iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D4F29921B794DF00C16D25 /* CSC690iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSC690iOSTests.swift; sourceTree = "<group>"; };
 		82D4F29B21B794DF00C16D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C087F4BD21C5E4CD00B0F46E /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		C087F4C121C5E52900B0F46E /* calendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarViewController.swift; sourceTree = "<group>"; };
+		C087F4C321C5E5AC00B0F46E /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
+		C087F4C521C5E5CD00B0F46E /* DateCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +103,11 @@
 				82D4F28421B794DE00C16D25 /* AppDelegate.swift */,
 				820DCE0721C26E85008AD34E /* WhatHappensToDonatedBloodViewController.swift */,
 				8284495F21C280DC005A1E92 /* EligibilityForDonatingBloodViewController.swift */,
+				C087F4C521C5E5CD00B0F46E /* DateCollectionView.swift */,
 				82D4F28621B794DE00C16D25 /* InfoViewController.swift */,
+				C087F4C121C5E52900B0F46E /* calendarViewController.swift */,
+				C087F4C321C5E5AC00B0F46E /* CalendarVars.swift */,
+				C087F4BD21C5E4CD00B0F46E /* profileViewController.swift */,
 				825993FB21C2761E00CB71E9 /* HowYourBodyReplacesBloodViewController.swift */,
 				820F410721B9A2AB00B6E61E /* Main.storyboard */,
 				820EA82F21C24BA00064BE9B /* DownloadFormViewController.swift */,
@@ -221,11 +233,15 @@
 			files = (
 				820DCE0821C26E85008AD34E /* WhatHappensToDonatedBloodViewController.swift in Sources */,
 				8251775E21BF7D1C00EF3F3A /* BenefitsOfBloodDonationViewController.swift in Sources */,
+				C087F4BE21C5E4CD00B0F46E /* profileViewController.swift in Sources */,
 				825993FC21C2761E00CB71E9 /* HowYourBodyReplacesBloodViewController.swift in Sources */,
+				C087F4C621C5E5CD00B0F46E /* DateCollectionView.swift in Sources */,
 				82B2D52621C081A300F3BD10 /* TipsForBloodDonationViewController.swift in Sources */,
 				82D4F28721B794DE00C16D25 /* InfoViewController.swift in Sources */,
 				82D4F28521B794DE00C16D25 /* AppDelegate.swift in Sources */,
 				8284496021C280DC005A1E92 /* EligibilityForDonatingBloodViewController.swift in Sources */,
+				C087F4C221C5E52900B0F46E /* calendarViewController.swift in Sources */,
+				C087F4C421C5E5AC00B0F46E /* CalendarVars.swift in Sources */,
 				820EA83021C24BA00064BE9B /* DownloadFormViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +407,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MPPBNFQUJK;
 				INFOPLIST_FILE = CSC690iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,6 +426,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MPPBNFQUJK;
 				INFOPLIST_FILE = CSC690iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

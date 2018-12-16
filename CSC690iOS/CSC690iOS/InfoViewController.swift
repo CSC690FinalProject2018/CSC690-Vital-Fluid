@@ -23,8 +23,8 @@ class InfoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var infoTableView: UITableView!
     
-    let number = Int.random(in: 0 ..< 15)
-    
+    //let number = Int.random(in: 0 ..< 15)            //versions 4.2 and above
+    let number = Int(arc4random_uniform(15))
 //    @IBOutlet var infoViewImages: [UIImageView]!
 //    @IBOutlet weak var infoTableView: UITableView!
 //
@@ -57,12 +57,12 @@ class InfoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         
         
-        let attrs = [
-            NSAttributedString.Key.foregroundColor: UIColor.red,
-            NSAttributedString.Key.font: UIFont(name: "Georgia-Bold", size: 30)!
-        ]
+//        let attrs = [
+//            NSAttributedString.Key.foregroundColor: UIColor.red,
+//            NSAttributedString.Key.font: UIFont(name: "Georgia-Bold", size: 30)!
+//        ]
         
-        UINavigationBar.appearance().titleTextAttributes = attrs
+//        UINavigationBar.appearance().titleTextAttributes = attrs
         self.title = "Vital Fluid"
         
         
